@@ -25,11 +25,18 @@ public class Main {
 
 
         // ========== Pagamento via Boleto ==========  
+
+         String tipodeBoleto = "Boleto Bancário";
+         String numeroBoleto = "234324324234324324234324324";
+         String nomedoTitular="Belmiro";
+         String numeroDocumento="234324324";
+        
+
         System.out.println("=== Processando pagamento via Boleto ===");
          boolean pagamentoBoleto = new PagamentoViaBoleto()
-        .puxarBoleto("Boleto Bancário")
-        .validarBoleto(".")
-        .informarDadosTitular("Belmiro", "234324324")
+        .puxarBoleto(tipodeBoleto)
+        .validarBoleto(numeroBoleto)
+        .informarDadosTitular(nomedoTitular, numeroDocumento)
         .efetuarPagamento(149.99);  
 
 
