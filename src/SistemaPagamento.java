@@ -12,7 +12,7 @@ public class SistemaPagamento implements GerenciaFormaPagamento {
 
     @Override
     public boolean processarPagamento(FormaPagamento forma, double valor) {
-        System.out.println("Faendo pagamento!");
+        System.out.println("Fazendo pagamento!");
         return true;
     }
 

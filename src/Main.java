@@ -24,13 +24,13 @@ public class Main {
         System.out.println();
 
 
-        // ========== Pagamento via Boleto ==========
+        // ========== Pagamento via Boleto ==========  
         System.out.println("=== Processando pagamento via Boleto ===");
          boolean pagamentoBoleto = new PagamentoViaBoleto()
         .puxarBoleto("Boleto Bancário")
-        .validarBoleto("234244553543544335346554456")
+        .validarBoleto(".")
         .informarDadosTitular("Belmiro", "234324324")
-        .efetuarPagamento(149.99);
+        .efetuarPagamento(149.99);  
 
 
     }
